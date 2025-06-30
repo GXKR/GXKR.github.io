@@ -1,83 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SmartPath Courses</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #1a73e8;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-    }
-    .course {
-      background: white;
-      margin-bottom: 1.5rem;
-      padding: 1.5rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .course h2 {
-      color: #333;
-    }
-    .course p {
-      color: #666;
-    }
-    .subscribe-btn {
-      background: #1a73e8;
-      color: white;
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-    .subscribe-btn:hover {
-      background: #155ecb;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #999;
-      padding: 1rem 0;
-    }
-  </style>
+  <!-- SEO & Social Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartPath Academy | Online Courses</title>
+  <meta name="description" content="Master your finances, live sustainably, and build passive income—all in one place.">
+  <meta property="og:title" content="SmartPath Academy">
+  <meta property="og:description" content="Online courses in Financial Literacy, Green Living & Passive Income.">
+  <meta property="og:image" content="https://gxkr.github.io/images/hero.jpg">
+  <meta property="og:url" content="https://gxkr.github.io/">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics (replace UA-XXXXXXX-X) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXX-X');
+  </script>
 </head>
+
 <body>
-  <header>
-    <h1>SmartPath Online Courses</h1>
-    <p>Learn, Grow, and Thrive—One Skill at a Time</p>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container">
+      <a href="#" class="logo">SmartPath</a>
+      <ul class="nav-links">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle navigation">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="container hero-content">
+      <h1>Learn. Grow. Thrive.</h1>
+      <p>Financial Literacy · Green Living · Passive Income in 30 Days</p>
+      <a href="#courses" class="btn-primary">Browse Courses</a>
+    </div>
   </header>
-  <main>
-    <div class="course">
-      <h2>💰 Financial Literacy</h2>
-      <p>Take control of your money and build a future you can trust. Learn budgeting, saving, debt management, and investing basics.</p>
-      <button class="subscribe-btn">Subscribe Now</button>
+
+  <!-- COURSES -->
+  <section id="courses" class="courses container">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+      <!-- Course 1 -->
+      <div class="course-card">
+        <img src="images/course-money.jpg" alt="Financial Literacy">
+        <h3>💰 Financial Literacy</h3>
+        <p>Take control of your money: budgeting, debt-free living, and investing essentials.</p>
+        <a href="https://gumroad.com/l/FINANCE_LINK" class="btn-secondary" target="_blank">Buy on Gumroad</a>
+      </div>
+      <!-- Course 2 -->
+      <div class="course-card">
+        <img src="images/course-green.jpg" alt="Green Living">
+        <h3>🌿 Green Living</h3>
+        <p>Eco-friendly hacks for everyday life—save the planet and your wallet.</p>
+        <a href="https://gumroad.com/l/GREEN_LINK" class="btn-secondary" target="_blank">Buy on Gumroad</a>
+      </div>
+      <!-- Course 3 -->
+      <div class="course-card">
+        <img src="images/course-passive.jpg" alt="Passive Income">
+        <h3>🌐 Passive Income in 30 Days</h3>
+        <p>2 hours/day for 30 days → then 5 hrs/week. Automated income, real results.</p>
+        <a href="https://gumroad.com/l/PASSIVE_LINK" class="btn-secondary" target="_blank">Buy on Gumroad</a>
+      </div>
     </div>
-    <div class="course">
-      <h2>🌿 Green Living</h2>
-      <p>Discover eco-friendly solutions to everyday problems and adopt sustainable practices that benefit your home and the planet.</p>
-      <button class="subscribe-btn">Subscribe Now</button>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials container">
+    <h2>What Students Are Saying</h2>
+    <div class="testimonial-list">
+      <blockquote>
+        “The Financial Literacy course changed my life. I’m debt-free and investing!”<footer>— Alex R.</footer>
+      </blockquote>
+      <blockquote>
+        “Green Living taught me how small swaps make a big impact. My utility bills dropped!”<footer>— Priya S.</footer>
+      </blockquote>
+      <blockquote>
+        “Passive Income in 30 Days paid for itself in month two. Unreal!”<footer>— Marcus T.</footer>
+      </blockquote>
     </div>
-    <div class="course">
-      <h2>🌐 Passive Income in 30 Days</h2>
-      <p>Commit 2 hours a day for 30 days to build a smart, automated income stream. Then maintain it in just 5 hours a week. Real tools. Real systems. Real results.</p>
-      <button class="subscribe-btn">Subscribe Now</button>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq container">
+    <h2>FAQ</h2>
+    <details>
+      <summary>How do I access course materials?</summary>
+      You get instant access to all videos & downloads via Gumroad after purchase.
+    </details>
+    <details>
+      <summary>Can I request a refund?</summary>
+      Yes—30-day money-back guarantee if you aren’t satisfied.
+    </details>
+    <details>
+      <summary>What if I’m a total beginner?</summary>
+      Each course is designed for complete beginners. We walk you through step by step.
+    </details>
+  </section>
+
+  <!-- SUBSCRIBE / EMAIL CAPTURE -->
+  <section id="subscribe" class="subscribe container">
+    <h2>Stay in the Loop</h2>
+    <!-- Replace action URL and hidden fields with your ConvertKit form embed -->
+    <form action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="post" class="form-inline">
+      <input type="email" name="email_address" placeholder="Your best email" required>
+      <button type="submit" class="btn-primary">Join Free Updates</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 SmartPath Academy. All rights reserved.</p>
     </div>
-  </main>
-  <footer>
-    &copy; 2025 SmartPath Academy. All rights reserved.
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
