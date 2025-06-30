@@ -1,1 +1,0 @@
-# GXKR.github.io
