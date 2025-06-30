@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GXKR Online Courses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a class="logo" href="#">GXKR Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">&#9776;</button>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li><a href="#courses" role="menuitem">Courses</a></li>
+        <li><a href="#testimonials" role="menuitem">Testimonials</a></li>
+        <li><a href="#faq" role="menuitem">FAQ</a></li>
+        <li><a href="#subscribe" role="menuitem">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Unlock Your Potential</h1>
+    <p>Transform your life with our expert-led online courses. Learn financial literacy, eco-friendly living, and build passive income streams!</p>
+    <a href="#courses" class="btn-primary">Browse Courses</a>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+      <!-- Course 1 -->
+      <div class="course-card">
+        <img src="images/course1.jpg" alt="Financial Literacy">
+        <h3>Financial Literacy</h3>
+        <button class="expand-btn" aria-expanded="false" aria-controls="details1">More Details</button>
+        <div class="course-details" id="details1" hidden>
+          <ul>
+            <li>Budgeting & Saving</li>
+            <li>Investing Basics</li>
+            <li>Debt Management</li>
+          </ul>
+          <a class="gumroad-button" href="https://gumroad.com/l/financialliteracy" target="_blank">Buy on Gumroad</a>
+        </div>
+      </div>
+      <!-- Course 2 -->
+      <div class="course-card">
+        <img src="images/course2.jpg" alt="Green Living">
+        <h3>Green Living</h3>
+        <button class="expand-btn" aria-expanded="false" aria-controls="details2">More Details</button>
+        <div class="course-details" id="details2" hidden>
+          <ul>
+            <li>Reduce Waste</li>
+            <li>Eco-friendly Swaps</li>
+            <li>Low-impact Lifestyle</li>
+          </ul>
+          <a class="gumroad-button" href="https://gumroad.com/l/greenliving" target="_blank">Buy on Gumroad</a>
+        </div>
+      </div>
+      <!-- Course 3 -->
+      <div class="course-card">
+        <img src="images/course3.jpg" alt="Passive Income Online">
+        <h3>Creating Passive Income Online in 30 Days</h3>
+        <button class="expand-btn" aria-expanded="false" aria-controls="details3">More Details</button>
+        <div class="course-details" id="details3" hidden>
+          <ul>
+            <li>Step-by-step plan</li>
+            <li>2 hours/day for 30 days</li>
+            <li>Automated income stream</li>
+          </ul>
+          <a class="gumroad-button" href="https://gumroad.com/l/passiveincome" target="_blank">Buy on Gumroad</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-list">
+      <blockquote>
+        “The Financial Literacy course changed my relationship with money. I feel empowered and in control!”<br>
+        <strong>- Alex</strong>
+      </blockquote>
+      <blockquote>
+        “Green Living gave me practical tips to live more sustainably. Highly recommend!”<br>
+        <strong>- Taylor</strong>
+      </blockquote>
+      <blockquote>
+        “I never thought I could create passive income online. The step-by-step plan worked!”<br>
+        <strong>- Jordan</strong>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>How does the subscription work?</summary>
+      <p>Subscribe with your email. You'll receive course access and updates. Cancel anytime.</p>
+    </details>
+    <details>
+      <summary>Do I need prior experience?</summary>
+      <p>No prior experience needed. Our courses are designed for beginners.</p>
+    </details>
+    <details>
+      <summary>Can I access courses on mobile?</summary>
+      <p>Yes, our platform is fully responsive and mobile-friendly.</p>
+    </details>
+    <details>
+      <summary>Is my payment information secure?</summary>
+      <p>All payments are securely processed via industry-leading platforms (integration required).</p>
+    </details>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe" id="subscribe">
+    <h2>Subscribe for Full Access</h2>
+    <p>Get instant access to all courses for $29/month. Cancel anytime.</p>
+    <form class="form-inline" id="subscribeForm" action="https://YOUR-CONVERTKIT-FORM-URL" method="post">
+      <input type="email" name="email_address" placeholder="Your email" required>
+      <!-- Add ConvertKit hidden fields here if needed -->
+      <button type="submit">Subscribe Now</button>
+    </form>
+    <div id="subscribeMsg"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 GXKR Online Courses. All rights reserved.
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
